@@ -17,6 +17,6 @@ spec:
       containers:
       - name: express
         image: infra:latest
-        imagePullPolicy: Never
+       # imagePullPolicy: Never //pull policy can be Never for local images 
         ports:
         - containerPort: 3000
