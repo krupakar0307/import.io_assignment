@@ -3,9 +3,8 @@ FROM node:12.13.0
 EXPOSE 3000
 
 WORKDIR /home
-RUN cd application
 
-COPY package.json package-lock.json ./
+COPY package.json package-lock.json .
 
 RUN npm install
 
