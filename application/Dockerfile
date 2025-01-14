@@ -4,12 +4,12 @@ EXPOSE 3000
 
 WORKDIR /home
 
-COPY package.json  .
+# COPY package.json  .
 
-RUN npm install
+# RUN npm install
 
-COPY . .
+# COPY . .
 
-RUN npm run build
+# RUN npm run build
 
-CMD ["node", "build/index.js"]
+# CMD ["node", "build/index.js"]
